@@ -1,109 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Promosi</title>
     <style>
-    	header{
-    	text-align: center;
-    	padding: 30px 0 10px 0;
-        margin:10px 0 0 0;
-    	color: Black;
-    	background-image: url("bg.png");
-    	background-size: cover;
-        Border-radius: 12px 12px 0 0;
-        font-family: 'Scriptina', cursive;
-    	font-size: 30px;
-        line-height: 0;
-}
-		body{
-		background-color: #FF997C;
-         align-items: center;
-}
-		.Main{
-			background-image: url("bg.png");
-        	background-size: 150%;
-        background-position: center;
-			background-color: white;
-			display: grid;
+        header {
+            text-align: center;
+            padding: 100px 0 50px 0;
+            margin: 10px 0 0 0;
+            color: Black;
+            background-image: url("bg.png");
+            background-size: cover;
+            Border-radius: 12px 12px 0 0;
+            font-family: 'Scriptina', cursive;
+            font-size: 60px;
+            line-height: 0;
+        }
+        
+        body {
+            background-color: #FF997C;
+            align-items: center;
+        }
+        
+        .Main {
+            background-image: url("bg.png");
+            background-size: 150%;
+            background-position: center;
+            background-color: white;
+            display: grid;
             grid-template-columns: repeat(2, 150px);
-            gap: 20px;
-            padding:10px;
-            
-}
-.judul{ 
-	background-image: url("bg.png");
-        	background-size: 150%;
-        background-position: center;
-}
-.tombol{
-	background-image: url("bg.png");
-        	background-size: 150%;
-        background-position: center;
-	padding: 20px 0 20px 0;
-	margin : 0 0 30px 0;
-    Border-radius: 0 0 12px 12px; 
-    line-height: 0.2;
-    text-align:center;
-    font-family: 'Cinzel', serif;
-}
-.contain1, .contain2, .contain3, 
-.contain4, .contain5, .contain6{
-		width: 150px;
-            height: 150px;
-            display: flex;
+            gap: 250px;
+            padding: 70px;
+        }
+        
+        .judul {
+            background-image: url("bg.png");
+            background-size: 150%;
+            background-position: center;
+        }
+        
+        .tombol {
+            background-image: url("bg.png");
+            background-size: 150%;
+            background-position: center;
+            padding: 60px 0 60px 0;
+            margin: 0 0 60px 0;
+            Border-radius: 0 0 12px 12px;
+            line-height: 0.2;
+            text-align: center;
+            font-family: 'Cinzel', serif;
+        }
+        
+        .contain1,
+        .contain4,
+        .contain5 {
+            width: 300px;
+            height: 300px;
+            margin: 70px;
             justify-content: center;
             text-align: center;
             align-items: center;
             color: Black;
-            font-size: 20px;
+            font-size: 30px;
             border-radius: 10px;
             font-family: 'Great Vibes', cursive;
-}
-footer a{
-	text-decoration: none;
-    animation: colorChange 3s infinite;
+        }
         
-}
-footer{
-	background-image: url("bg.png");
-	background-size: cover;
-	text-align:center;
-	color: black;
-    padding: 20px 0 10 0;
-    border-radius:12px 12px 12px 12px;
-    font-size: inherit;
-    font-family: inherit;
-    bottom:0;
-    line-height: 0;q
-    
-    
-    
-}
-h1{
-	animation: blink 1s infinite;
-	animation: sizeChange 2s infinite;
-      
-}
-.button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 15px 100px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 0 20px 0 20px;
-    cursor: pointer;
-    border-radius: 12px;
-}
-
-.button:hover {
-    background-color: #45a049;
-}
-@keyframes colorChange {
+        .contain2,
+        .contain3,
+        .contain6 {
+            background-color: #45a049;
+            width: 300px;
+            height: 300px;
+            margin: 70px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+        
+        footer a {
+            text-decoration: none;
+            animation: colorChange 3s infinite;
+        }
+        
+        footer {
+            text-align: center;
+            color: black;
+            padding: 20px 0 10 0;
+            border-radius: 12px 12px 12px 12px;
+            font-size: inherit;
+            font-family: inherit;
+            bottom: 0;
+            line-height: 0;
+            q
+        }
+        
+        h1 {
+            animation: sizeChange 2s infinite;
+        }
+        
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 20px 200px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            margin: 0 20px 0 20px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+        
+        .button:hover {
+            background-color: #45a049;
+        }
+        
+        @keyframes colorChange {
             10% {
                 color: red;
             }
@@ -114,9 +130,9 @@ h1{
                 color: green;
             }
         }
-        @keyframes blink {
-            
-        }
+        
+        @keyframes blink {}
+        
         @keyframes sizeChange {
             0% {
                 transform: scale(1);
@@ -137,27 +153,160 @@ h1{
                 color: gold;
             }
         }
+        
+        @media (max-width: 412px) {
+            header {
+                text-align: center;
+                padding: 30px 0 10px 0;
+                margin: 10px 0 0 0;
+                color: Black;
+                background-image: url("bg.png");
+                background-size: cover;
+                Border-radius: 12px 12px 0 0;
+                font-family: 'Scriptina', cursive;
+                font-size: 30px;
+                line-height: 0;
+            }
+            body {
+                background-color: #FF997C;
+                align-items: center;
+            }
+            .Main {
+                background-image: url("bg.png");
+                background-size: 150%;
+                background-position: center;
+                background-color: white;
+                display: grid;
+                grid-template-columns: repeat(2, 150px);
+                gap: 20px;
+                padding: 10px;
+            }
+            .judul {
+                background-image: url("bg.png");
+                background-size: 150%;
+                background-position: center;
+            }
+            .tombol {
+                background-image: url("bg.png");
+                background-size: 150%;
+                background-position: center;
+                padding: 20px 0 20px 0;
+                margin: 0 0 30px 0;
+                Border-radius: 0 0 12px 12px;
+                line-height: 0.2;
+                text-align: center;
+                font-family: 'Cinzel', serif;
+            }
+            .contain1,
+            .contain2,
+            .contain3,
+            .contain4,
+            .contain5,
+            .contain6 {
+                width: 150px;
+                height: 150px;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                color: Black;
+                font-size: 20px;
+                border-radius: 10px;
+                font-family: 'Great Vibes', cursive;
+            }
+            footer a {
+                text-decoration: none;
+                animation: colorChange 3s infinite;
+            }
+            footer {
+                text-align: center;
+                color: black;
+                padding: 20px 0 10 0;
+                border-radius: 12px 12px 12px 12px;
+                font-size: inherit;
+                font-family: inherit;
+                bottom: 0;
+                line-height: 0;
+                q
+            }
+            h1 {
+                animation: sizeChange 2s infinite;
+            }
+            .button {
+                background-color: #4CAF50;
+                border: none;
+                color: white;
+                padding: 15px 100px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 0 20px 0 20px;
+                cursor: pointer;
+                border-radius: 12px;
+            }
+            .button:hover {
+                background-color: #45a049;
+            }
+            @keyframes colorChange {
+                10% {
+                    color: red;
+                }
+                50% {
+                    color: blue;
+                }
+                100% {
+                    color: green;
+                }
+            }
+            @keyframes blink {}
+            @keyframes sizeChange {
+                0% {
+                    transform: scale(1);
+                }
+                50% {
+                    transform: scale(1.5);
+                }
+                100% {
+                    transform: scale(1);
+                }
+                0% {
+                    color: gold;
+                }
+                50% {
+                    color: red;
+                }
+                100% {
+                    color: gold;
+                }
+            }
+        }
     </style>
+
     <body>
-    	<header><div class="judul"><h2>Pigura Ucapan</h2> <h6> custom </h6>
-</header>
-    <section class="Main">
-    <div class="contain1"> Mempersembahkan Pigura dekorasi untuk Ucapan pernikahan</div>
-    <div class="contain2">  <img src="1.png" alt="gambar 1"width="300" height="200">
-</div>
-    <div class="contain3"> <img src="2.png" alt="gambar 2"width="300" height="200">
-</div>
-    <div class="contain4"> Desain menarik dan cantik</div>
-    <div class="contain5"> Bahan Berkualitas Dan kuat</div>
-    <div class="contain6"> <img src="3.png" alt="gambar 3"width="300" height="200">
-</div>
-</section>
-<section class="tombol">
-	<h4>Only</h4> <h1>Rp.100.000</h1>
-	<button onclick="window.location.href='https://www.shopee.co.id/'" class="button">Beli sekarang</button>
-</section>
-<footer>
-  <p>By Riss</p>
-  <p>Follow us on Instagram: <a href="https://www.instagram.com/ritsu.kiss" target="_blank">@Ritsu.kiss</a></p>
-</footer>
-</body>
+        <header>
+            <div class="judul">
+                <h2>Pigura Ucapan</h2>
+                <h6> custom </h6>
+        </header>
+        <section class="Main">
+            <div class="contain1"> Mempersembahkan Pigura dekorasi untuk Ucapan pernikahan</div>
+            <div class="contain2"> <img src="1.png" alt="gambar 1" width="300" height="auto">
+            </div>
+            <div class="contain3"> <img src="2.png" alt="gambar 2" width="300" height="auto">
+            </div>
+            <div class="contain4"> Desain menarik dan cantik</div>
+            <div class="contain5"> Bahan Berkualitas Dan kuat</div>
+            <div class="contain6"> <img src="3.png" alt="gambar 3" width="300" height="auto">
+            </div>
+        </section>
+        <section class="tombol">
+            <h4>Only</h4>
+            <h1>Rp.100.000</h1>
+            <button onclick="window.location.href='https://www.shopee.co.id/'" class="button">Beli sekarang</button>
+        </section>
+        <footer>
+            <p>By Riss</p>
+            <p>Follow us on Instagram: <a href="https://www.instagram.com/ritsu.kiss" target="_blank">@Ritsu.kiss</a></p>
+        </footer>
+    </body>
